@@ -1,0 +1,15 @@
+//
+   Created by rasmus on 3/1/16.
+extends layout
+
+block content
+    div
+        h1= title
+        p Welcome to #{title}
+        p You have been here: <strong>#{randomJokePage}</strong> times
+
+
+        p Joke of the day: #{jokes.joke}
+
+    div
+        a(href='/index') Home

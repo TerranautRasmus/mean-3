@@ -1,0 +1,28 @@
+//
+   Created by rasmus on 3/29/16.
+
+extends layout
+
+block content
+    div
+        h1= title
+        p Welcome to #{title}
+
+            form(method="POST" action="/api/findJoke")
+                select(name="searchType")
+                    option(value="type") Type
+                    option(value="id") ID
+                input(type="text" name="searchInput", placeholder="Search here..")
+                button(type="submit", value="search") Search
+
+    div
+
+    div
+    if jokes != undefined
+        if Array.isArray(jokes)
+            ul
+                each joke in jokes
+                    li
+                        p= joke.joke
+            div
+    a(href='/index') Home

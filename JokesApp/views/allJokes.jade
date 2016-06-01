@@ -1,0 +1,26 @@
+//
+   Created by rasmus on 3/1/16.
+extends layout
+
+block content
+    div
+        h1= title
+        p Welcome to #{title}
+        p You have been here: <strong>#{allJokesPage}</strong> times
+        ul
+        each joke in jokes
+            li
+                p= joke.joke
+
+                form(method="POST" action="/api/deleteJoke")
+                    input(type="hidden" name="deleteJokeID" value="" + joke._id)
+                    button(type="submit") Delete
+                br
+                form(method="GET" action="/api/editJoke")
+                    input(type="hidden" name="editJokeID" value="" + joke._id)
+                    button(type="submit") Edit
+
+    br
+    div
+        a(href='/index') Home
+

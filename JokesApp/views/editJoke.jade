@@ -1,0 +1,17 @@
+//
+   Created by rasmus on 3/29/16.
+
+extends layout
+
+block content
+    div
+        h1= title
+        p Welcome to #{title}
+
+            form(method="POST" action="/api/editJoke")
+                input(type="text" name="editInput", placeholder=editedJoke.joke)
+                button(type="submit", value="edit") Save Edit
+
+    div
+
+    a(href='/index') Home

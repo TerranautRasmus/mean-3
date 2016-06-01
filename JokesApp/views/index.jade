@@ -1,0 +1,19 @@
+extends layout
+
+block content
+
+    div
+        h1= title
+        p Welcome to #{title} <strong>#{userName}</strong>
+
+        p= notification
+
+    div
+        a(href='/api/allJokes') All Jokes
+        br
+        a(href='/api/randomJoke') Random Joke
+        br
+        a(href='/api/addJoke') Add Joke
+        br
+        a(href='/api/findJoke') Find Joke
+

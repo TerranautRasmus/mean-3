@@ -1,0 +1,9 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="bin/www" type="NodeJSConfigurationType" factoryName="Node.js" path-to-node="/usr/bin/node" path-to-js-file="$PROJECT_DIR$/../JokesApp/bin/www" working-dir="$PROJECT_DIR$/../JokesApp">
+    <envs>
+      <env name="DEBUG" value="Problem2:*" />
+    </envs>
+    <browser start="true" url="http://localhost:3000/" />
+    <method />
+  </configuration>
+</component>

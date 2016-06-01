@@ -1,0 +1,23 @@
+How to use the app
+
+when the project is run, it will load on localhost:3000
+
+You will be greeted by the login page where you only need to enter a name you choose yourself. no security is added in this one.
+
+When you login you have 4 links you can choose from.
+
+All Jokes
+Random Joke
+Add Joke
+Find Joke
+
+All Jokes will show you all the jokes currently in the database and give you a choice to delete them or edit them(note- edit does not work)
+
+Random Joke will move you to a page where a random joke will be fetched from the database.
+
+Add Joke will move you to a page where you will be met with a input field and a button where the text you write there will be the new joke.
+The joke will have a defaulth author, link, type.
+
+Find Joke will be a place where you can search the database for the jokes in it, by searching for type.
+Newly added jokes will have the type "unique" so if you search for that, only your own jokes will be presented, otherwise search for "short" to get a list of the 6 default jokes there is.
+

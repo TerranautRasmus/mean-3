@@ -1,0 +1,68 @@
+1) Explain, generally, what is meant by a NoSQL database.<br />
+The term NoSQL database is understood as a database which is non-relational, distributed, schemaless and open-source.
+Its also horizontally scalable which means that woy can very simple add more clusters to it without any fuss.<br />
+    To retrieve data from the database, you do not use SQL-calls as the data is stored in documents (due to the schemaless structure).
+It does not store its data in tables as a relational database, which is why it scales so well.
+	Different type are: Key-value, Wide-Column, Graph and Document.
+
+
+2) Explain Pros & Cons in using a NoSQL database like MongoDB as your data store, compared to a traditional Relational
+SQL Database like MySQL.<br />
+Pros:<br />
+1. Flexible. Because of the documents-structure/data model you can easily store and combine any type of data, both
+   structured and unstructured (schemaless).<br />
+2. Elastic scalability. NoSQL databases is cheap to upscale. It can use off-the-shelves hardware (thus cheap) and it is
+   a simple task to add more storage/CPU to the database. It is easy to just add another cluster to the setup and thus
+   having a lot more storage.<br />
+3. High Performance. NoSQL databases are built for great performance when working with large amount of data. Not only
+   data in a structured type but also in the form of documents (container).
+
+Cons:<br />
+1. There is no universal language like SQL to support the systems. This means you will have to adopt your code when
+   working with different NoSQL databases.<br />
+2. It lacks transactions. NoSQL databases can't make use of transactions, so when you're updating a document/post you
+   will have som issues with concurrency. You use object-oriented APIs to get data out.<br />
+3. The NoSQL database is fairly new and this means that there isn't so much documentation (se allso 2.1). There might be
+   errors, bugs and weird things happning.
+
+
+3) Explain how databases like MongoDB and redis would be classified in the NoSQL world.<br />
+MongoDB and redis supports dynamic schema design (aka schemaless), thus allowing documents (as oppose to post in SQL)
+in a collection to have different fields and structures. The database uses BSON, which provides a binary representation
+of JSON. You can look at is as if you are storing txt documents on your computer, they can differ in what data they hold.<br />
+    Redis is a key-value database where each value(data) in the database gets a key you can search for (a bit like a
+hash-map) making it for an example good at storing login information.
+
+
+4) Explain reasons to add a layer like Mongoose, on top on of a schema-less database like MongoDB<br />
+- Often we have data that relates to other data - ie city with zipcodes og streets with numbers and zipcodes (cities and
+streets can have the same name inspite they are not the same. Mongoose solves this problem. Furthermore Mongoose acts
+like a layer on top of MongoDB. It gives you easy access to ODM (Object Document Mapping) and you avoid som callback
+structures, and you can refer to other collections in the database (sort of joins in mySQL).
+
+
+5) Explain, using relevant examples, the strategy for querying MongoDB (all CRUD operations)<br />
+Example JokesApp. Edit joke does not work. Problem is that the ID not being sent when yopu do the POST-call.
+
+
+6) Demonstrate, using a REST-API, how to perform all CRUD operations on a MongoDB<br />
+CRUD function in joke does not work. Problem is that the ID not being sent when yopu do the POST-call.
+
+
+7) Explain the benefits from using Mongoose, and provide an example involving all CRUD operations<br />
+- Not enough time.
+
+
+8) Explain how redis "fits" into the NoSQL world, and provide an example of how to use it.<br />
+Example: RedisTest where a simple key-value i stored in the database and recived. Read answer #3.
+
+
+9) Explain, using a relevant example, how redis (or a similar) can increase scalability (drastic) for a server using server side sessions<br />
+- Not enough time.
+
+
+10) Explain, using a relevant example, a full MEAN application including relevant test cases to test the REST-API (not on the production database)<br />
+- Not enough time. During class we made the excercise in MeanProject1 folder.
+
+
+

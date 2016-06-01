@@ -1,0 +1,18 @@
+doctype html
+html
+    script(type='text/javascript').
+        window.cookieconsent_options = {
+            "message": "This website uses cookies to help develop the website based on the users activity",
+            "dismiss": "I Accept",
+            "learnMore": "More info",
+            "link": null,
+            "theme": "dark-floating"
+        };
+    script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.9/cookieconsent.min.js')
+
+
+    head
+        title= title
+        link(rel='stylesheet', href='/stylesheets/style.css')
+    body
+        block content

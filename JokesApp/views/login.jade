@@ -1,0 +1,14 @@
+//
+   Created by rasmus on 3/2/16.
+
+extends layout
+
+
+block content
+    div
+        h1 Please login
+        form(id="loginform" action="/index" method="post")
+            label Type Username:
+            input(type="text" name="userName" id="user")
+            input(type="submit" id="submitBtn")
+    div

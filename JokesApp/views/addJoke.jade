@@ -1,0 +1,16 @@
+//
+   Created by rasmus on 3/1/16.
+extends layout
+
+block content
+    div
+        h1= title
+        p Welcome to #{title}
+        p You have been here: <strong>#{addJokePage}</strong> times
+
+        form(method="post" id="jokeform" action="/api/addJoke")
+            label Add Joke:
+            input(name="joke")
+            input(type="submit")
+    div
+        a(href='/index') Home
